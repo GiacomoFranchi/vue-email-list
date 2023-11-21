@@ -7,19 +7,18 @@
     <link rel="stylesheet" href="css/style.css">
     <!--Vue Js-->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <title>Document</title>
+    <title>Email list</title>
 </head>
 <body>
     
     <div id="app">
         <h1>Ciao {{ username }}</h1>
-        <button @click="generateMail"
-           >Genera lista di 10 mail random</button>
+        <button @click="generateMail">
+            Genera lista di 10 mail random
+        </button>
         <ul v-if="mails.length > 9 " v-for="(mail, index) in mails">
             <li>{{ mail }}</li>
         </ul>
-
-
         <hr>
     </div>
     <!-- axios -->
