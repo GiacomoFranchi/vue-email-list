@@ -15,7 +15,7 @@
         <h1>Ciao {{ username }}</h1>
         <button @click="generateMail"
            >Genera lista di 10 mail random</button>
-        <ul  v-for="(mail, index) in mails">
+        <ul v-if="mails.length > 9 " v-for="(mail, index) in mails">
             <li>{{ mail }}</li>
         </ul>
 

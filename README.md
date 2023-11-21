@@ -20,4 +20,5 @@ richiedendo un nome randomico che inseriro in html in un h1 dichiarandolo come {
 cosi da genereare a ogni ciclo un indirizzo mail random che andrò a inserire nell'array di "mails"
 
 **OUTPUT**
-utilizzando v-for="(mail , index) in mails" all'interno di <ul> genero una lista di 10 <li> uno per ogni mail contenuta nell'array
+1. utilizzando v-for="(mail , index) in mails" all'interno di <ul> genero una lista di 10 <li> uno per ogni mail contenuta nell'array
+2. utilizzando v-if all'interno di <ul> mi assicuro che la lista contenente le mail appaia a schermo solo dopo che tutte e 10 le mail vengano generate
